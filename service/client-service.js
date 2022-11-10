@@ -1,7 +1,7 @@
 const crearNuevaLinea = (nombre, email) => {
   const linea = document.createElement("tr");
 
-  const contenido = `<tr>
+  const contenido = `
       <td class="td" data-td>${nombre}</td>
       <td>${email}</td>
       <td>
@@ -22,8 +22,8 @@ const crearNuevaLinea = (nombre, email) => {
             </button>
          </li>
       </ul>
-      </td>
-      </tr>`;
+      </td>`
+   ;
 
   linea.innerHTML = contenido;
   return linea;
