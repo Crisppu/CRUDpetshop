@@ -28,25 +28,14 @@ const crearNuevaLinea = (nombre, email) => {
 };
 const table = document.querySelector("[data-table]");
 
+//fetch api
 function listaDeClientes() {
-  const promise = new Promise((resolve, reject) => {
-    // comunicacion entre el frontend y el backend
-    const http = new XMLHttpRequest();
-
-    http.open("GET", "http://localhost:3000/perfil");
-
-    http.send();
-
-    http.onload = () => {
-      const respuesta = JSON.parse(http.response);
-      if(http.status >= 400){
-        reject(respuesta);
-      }else{
-        resolve(respuesta);
-      }
-    };
-  });
-  return promise;
+  return fetch('http://localhost:3000/perfil').then( function (respuesta){ //then porque nos esta retornado una promesa
+    return respuesta.json();
+    // return fetch('http://localhost:3000/perfil') abre una conexion con esta url, luego de que se ejecute esa promesa
+    //.then( function (respuesta){ //ENTONCES la vamos a recibir aqui
+    //return respuesta.json(); y la vamos a transformar en el formato json
+  })
 };
 
 listaDeClientes().then((result) => {
