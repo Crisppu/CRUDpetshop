@@ -14,6 +14,16 @@
       "nombre": "cris",
       "email": "vnuvia@gmail.com",
       "id": "30f84332-568a-4eb5-8a77-fab1d70fe99a"
+    },
+    {
+      "nombre": "ale",
+      "email": "ale@alura.com",
+      "id": "8bd575b9-9aa7-40b5-b0b5-f3e8c7a77c70"
+    },
+    {
+      "nombre": "miriam",
+      "email": "miriamm@alura.com",
+      "id": "75b18d89-7608-46e0-b1f7-89299d370499"
     }
   ]
 }
