@@ -43,15 +43,7 @@
         <h1 class="card__title">Nuevo Cliente</h1>
         <form class="flex flex--column" data-form>
           <div class="input-container">
-            <input
-              name="nombre"
-              id="nombre"
-              class="input"
-              type="text"
-              placeholder="Nombre"
-              required
-              data-nombre
-            />
+            <input name="nombre"id="nombre"class="input"type="text"placeholder="Nombre" required data-nombre/>
             <label class="input-label" for="nombre">Nombre</label>
             <span class="input-menssage-error">Este campo es requerido</span>
           </div>
@@ -72,5 +64,7 @@
         </form>
       </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+    <script type="module" src="../controllers/resgistro-controller.js"></script>
   </body>
 </html>

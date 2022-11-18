@@ -35,14 +35,13 @@ const table = document.querySelector("[data-table]");
 
 
 //mostrar y generar la informacion
-clientServices.listaDeClientes()
-  .then((result) => {
-    console.log(result);
-    result.forEach((perfil) => {
-      const nuevaLinea = crearNuevaLinea(perfil.nombre, perfil.email);
-      table.appendChild(nuevaLinea);
-    });
-  })
-  .catch(function (error) {
-    alert("ocurrio un error");
+clientServices.listaDeClientes().then((result) => {
+  console.log(result);
+  result.forEach((perfil) => {
+    const nuevaLinea = crearNuevaLinea(perfil.nombre, perfil.email);
+    table.appendChild(nuevaLinea);
   });
+})
+.catch(function (error) {
+  alert("ocurrio un error");
+});
