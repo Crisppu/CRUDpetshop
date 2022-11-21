@@ -1,11 +1,6 @@
 {
   "perfil": [
     {
-      "nombre": "ale",
-      "email": "ale@alura.com",
-      "id": "8bd575b9-9aa7-40b5-b0b5-f3e8c7a77c70"
-    },
-    {
       "nombre": "messi",
       "email": "messi@alura.com",
       "id": "6b0ba951-aa38-408c-bdc5-91c3b1a12504"
@@ -19,11 +14,6 @@
       "nombre": "arjona",
       "email": "perromon@gmail.com",
       "id": "d67d5914-d4f4-4181-abd9-4ed500f21c39"
-    },
-    {
-      "nombre": "h",
-      "email": "h@alura.com",
-      "id": "e9e12018-378e-40af-9cd9-9663cd535f61"
     }
   ]
 }
